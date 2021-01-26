@@ -2,131 +2,325 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>TinDog</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Trip Planner</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <!--    CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--    Font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!--    Bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+            crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-  <section id="title">
+<section id="title">
 
-    <!-- Nav Bar -->
+    <div class="container-fluid">
+
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <a class="navbar-brand" href="">tripPlanner</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta">Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
 
 
-    <!-- Title -->
+        <!-- Title -->
 
-    <div>
-      <h1>Meet new and interesting dogs nearby.</h1>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+        <div class="row">
+
+            <div class="col-lg-6">
+                <h1>Traveling was never so easy.</h1>
+                <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download
+                </button>
+                <button type="button" class="btn btn-outline-light btn-lg download-btn"><i
+                        class="fab fa-google-play"></i>Download
+                </button>
+            </div>
+
+
+            <div class="col-lg-6">
+                <img class="title-img" src="images/app_main.png" alt="iphone-mockup">
+            </div>
+        </div>
     </div>
-    <div>
-      <img src="images/iphone6.png" alt="iphone-mockup">
+</section>
+
+
+<!-- Features -->
+
+<section id="features">
+    <div class="row">
+        <div class="feature-box col-lg-4">
+            <i class="icon fas fa-plane fa-4x"></i>
+            <h3>Go anywhere.</h3>
+            <p>You pick the place and we'll make it happen. Find the best flights, cars, hotels and destination planning
+                to make your trip the best it can be.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+            <i class="icon fas fa-heart fa-4x"></i>
+            <h3>No Stress</h3>
+            <p>There's no catch, no surprises and no hidden fees. Every expense is given to you up front, so you can
+                feel relaxed before and after your trip.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+            <i class="icon fas fa-suitcase fa-4x"></i>
+            <h3>Your choice.</h3>
+            <p>Whether you like to plan things out or be spontaneous, we'll help you score the best deals on everything
+                from day trips to epic adventures.</p>
+        </div>
     </div>
 
-  </section>
+</section>
 
 
-  <!-- Features -->
+<!-- Testimonials -->
 
-  <section id="features">
+<section id="testimonials">
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
+            <div class="carousel-item active">
+                <h2 class="testimonial-text">I had the best trip ever to skiing, so easy, no hidden fees. tripPlanner
+                    made my
+                    vacation special</h2>
+                <img class="testimonial-image" src="images/alfi.jpg" alt="ally-profile">
+                <em>Ally, Turkey</em>
+            </div>
 
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">I booked my trip to Europe through tripPlanner, and made the right choice.
+                    Highly recommend!</h2>
+                <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profil">
+                <em>Beverly, Chicago</em>
+            </div>
 
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section id="testimonials">
-
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
-
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
-
-  </section>
-
-
-  <!-- Press -->
-
-  <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
-
-  </section>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">I traveled to South Africa with tripPlanner, and was surprised how easy it
+                    is. Have
+                    many lovely memories. Thank you tripPlanner</h2>
+                <img class="testimonial-image" src="images/betty1.jpg" alt="betty-profile">
+                <em>Betty, New York</em>
+            </div>
 
 
-  <!-- Pricing -->
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+</section>
 
-  <section id="pricing">
+
+<!-- Press -->
+
+<section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+</section>
+
+
+<!-- Pricing -->
+
+<section id="pricing">
 
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
 
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    <div class="row">
+        <div class="pricing-column col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Basic</h3>
+                </div>
+
+                <div class="card-body">
+                    <h2>Free</h2>
+                    <p>Booking tickets</p>
+                    <p>Booking hotel</p>
+                    <p>Unlimited App Usage</p>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
 
 
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+        <div class="pricing-column col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Premium</h3>
+                </div>
 
-  </section>
+                <div class="card-body">
+                    <h2>$49 / mo</h2>
+                    <p>Booking tickets</p>
+                    <p>Booking hotel</p>
+                    <p>Booking Car</p>
+                    <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ultimate</h3>
+                </div>
+                <div class="card-body">
+                    <h2>$99 / mo</h2>
+                    <p>Priority Flights</p>
+                    <p>All inclusive hotels</p>
+                    <p>Unlimited App Usage</p>
+                    <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
-  <!-- Call to Action -->
+    <!--    <div class="card" style="width: 18rem;">-->
+    <!--        <div class="card-header">-->
+    <!--            Card header-->
+    <!--            <div class="card-body">-->
+    <!--                Card body-->
+    <!--                <h5 class="card-title">Card title</h5>-->
+    <!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+    <!--                    card's content.</p>-->
+    <!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+    <!--            </div>-->
+    <!--        </div>-->
 
-  <section id="cta">
+    </div>
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <!--    <h3>Chihuahua</h3>-->
+    <!--    <h2>Free</h2>-->
+    <!--    <p>5 Matches Per Day</p>-->
+    <!--    <p>10 Messages Per Day</p>-->
+    <!--    <p>Unlimited App Usage</p>-->
+    <!--    <button type="button">Sign Up</button>-->
 
-  </section>
+
+    <!--    <h3>Labrador</h3>-->
+    <!--    <h2>$49 / mo</h2>-->
+    <!--    <p>Unlimited Matches</p>-->
+    <!--    <p>Unlimited Messages</p>-->
+    <!--    <p>Unlimited App Usage</p>-->
+    <!--    <button type="button">Sign Up</button>-->
 
 
-  <!-- Footer -->
+    <!--    <h3>Mastiff</h3>-->
+    <!--    <h2>$99 / mo</h2>-->
+    <!--    <p>Pirority Listing</p>-->
+    <!--    <p>Unlimited Matches</p>-->
+    <!--    <p>Unlimited Messages</p>-->
+    <!--    <p>Unlimited App Usage</p>-->
+    <!--    <button type="button">Sign Up</button>-->
 
-  <footer id="footer">
+</section>
+
+
+<!-- Call to Action -->
+
+<section id="cta">
+
+    <h3 class="cta-heading">Because You're Worth It. Book your next vacation with us</h3>
+    <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download
+    </button>
+    <button type="button" class="btn btn-outline-light btn-lg download-btn"><i
+            class="fab fa-google-play"></i>Download
+    </button>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer id="footer">
+    <a href="https://twitter.com/"><i class="footer-icons fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/"><i class="footer-icons fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/"><i class="footer-icons fab fa-instagram"></i></a>
+    <a href="mailto:bernara.dzhaparova@gmail.com"><i class="footer-icons fas fa-envelope"></i></a>
+
+
 
     <p>© Copyright 2018 TinDog</p>
 
-  </footer>
+</footer>
 
 
 </body>
 
 </html>
+
+
+
